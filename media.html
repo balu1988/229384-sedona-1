@@ -6,18 +6,17 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Sedona</h1>
       <div class="page-header__logo">
-        <a href="index.html"><img src="#" width="" height="" alt="Sedona logo"></a>
+        <a class="page-header__logo-link" href="index.html"><img src="#" width="" height="" alt="Sedona logo"></a>
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item  main-nav__item--active"><a>Фото и видео</a></li>
-            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="">Html Academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">Html Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -26,7 +25,7 @@
       </div>
     </header>
 
-    <section class="media">
+    <article class="media">
       <header class="media__header">
         <div class="media__wrapper">
           <h2 class="media__title">Фото и видео</h2>
@@ -38,9 +37,11 @@
           <div class="media__photo">
             <a href=""><img src="#" width="" height="" alt="Photo1"></a>
           </div>
-          <b class="media__pictures__title">Неродные просторы</b>
-          <p class="media__pictures__author">Автор фото: Борис</p>
-          <span class="media__pictures__likes">1350</span>
+          <div class="media__block">
+            <b class="media__title">Неродные просторы</b>
+            <p class="media__author">Автор фото: Борис</p>
+            <a class="media__likes" href="">1350</a>
+          </div>
         </div>
       </div>
       <div class="media__pictures">
@@ -48,9 +49,11 @@
           <div class="media__photo">
             <a href=""><img src="#" width="" height="" alt="Photo2"></a>
           </div>
-          <b class="media__pictures__title">Местная растительность</b>
-          <p class="media__pictures__author">Автор фото: Сергей</p>
-          <span class="media__pictures__likes">143</span>
+          <div class="media__block">
+            <b class="media__title">Местная растительность</b>
+            <p class="media__author">Автор фото: Сергей</p>
+            <a class="media__likes" href="">143</a>
+          </div>
         </div>
       </div>
       <div class="media__pictures">
@@ -58,9 +61,11 @@
           <div class="media__photo">
             <a href=""><img src="#" width="" height="" alt="Photo3"></a>
           </div>
-          <b class="media__pictures__title">Дорога на север</b>
-          <p class="media__pictures__author">Автор фото: Петр</p>
-          <span class="media__pictures__likes">96</span>
+          <div class="media__block">
+            <b class="media__title">Дорога на север</b>
+            <p class="media__author">Автор фото: Петр</p>
+            <a class="media__likes" href="">96</a>
+          </div>
         </div>
       </div>
       <div class="media__pictures">
@@ -68,9 +73,11 @@
           <div class="media__photo">
             <a href=""><img src="#" width="" height="" alt="Photo4"></a>
           </div>
-          <b class="media__pictures__title">Мост дьявола</b>
-          <p class="media__pictures__author">Автор фото: Антон</p>
-          <span class="media__pictures__likes">254</span>
+          <div class="media__block">
+            <b class="media__title">Мост дьявола</b>
+            <p class="media__author">Автор фото: Антон</p>
+            <a class="media__likes" href="">254</a>
+          </div>
         </div>
       </div>
       <div class="media__video">
@@ -78,11 +85,11 @@
           <h2 class="media__title">Все еще сомневаетесь?</h2>
           <p class="media__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="media__video__movie">
-          <img src="#" width="" height="" alt="Video">
+        <div class="media__movie">
+          <video class="media__player" poster="#"></video>
         </div>
       </div>
-    </section>
+    </article>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
