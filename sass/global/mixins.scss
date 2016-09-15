@@ -1,0 +1,40 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin border {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@mixin input-style {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  background-color: $input-color;
+  outline: none;
+  border: none;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    opacity: 1;
+  }
+}

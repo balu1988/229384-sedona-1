@@ -1,0 +1,16 @@
+.page-footer {
+  padding: 10px 0;
+  text-align: center;
+
+  &__contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+}

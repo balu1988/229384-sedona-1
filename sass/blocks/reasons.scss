@@ -1,0 +1,16 @@
+.reasons {
+  &__header {
+    padding: 30px;
+    text-align: center;
+  }
+
+  &__slogan {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  &__intro {
+    font-size: 14px;
+    line-height: 26px;
+    color: $text-color;
+  }
+}

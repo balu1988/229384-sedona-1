@@ -1,0 +1,20 @@
+@import
+  "global/normalize",
+  "global/base",
+  "global/mixins",
+  "global/variables";
+
+@import
+  "blocks/button",
+  "blocks/form",
+  "blocks/hotel-search",
+  "blocks/main-nav",
+  "blocks/map-container",
+  "blocks/media",
+  "blocks/page-footer",
+  "blocks/page-header",
+  "blocks/reason",
+  "blocks/reason-picture",
+  "blocks/reasons",
+  "blocks/social-link",
+  "blocks/social-links";

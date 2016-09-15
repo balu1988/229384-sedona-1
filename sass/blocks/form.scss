@@ -1,0 +1,56 @@
+.form {
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    padding: 20px 0;
+    text-align: center;
+    @include border;
+  }
+
+   &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__intro {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__block {
+    @include border;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 26px;
+    color: $text-color;
+
+    &--bold {
+      font-size: 18px;
+      font-weight: bold;
+      color: $black;
+      text-transform: none;
+    }
+  }
+
+  &__input {
+    @include input-style;
+  }
+
+  &__textarea {
+    @include input-style;
+  }
+}
+
+
+

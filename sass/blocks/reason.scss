@@ -1,0 +1,35 @@
+.reason {
+  padding: 30px 30px;
+  text-align: center;
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  &__number {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &--icon {
+    padding-left: 70px;
+    text-align: left;
+  }
+
+  &--blue {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &--grey {
+    color: $text-color;
+    background-color: $gray;
+  }
+}

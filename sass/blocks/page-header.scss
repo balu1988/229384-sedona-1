@@ -1,0 +1,40 @@
+.page-header {
+  &__head {
+    min-height: 56px;
+  }
+
+  &__logo {
+    position: relative;
+
+    &-link {
+      position: absolute;
+      left: 50%;
+      top: -56px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__background-foto {
+    min-height: 158px;
+    background-image:
+      url("../img/text-sedona.svg"),
+      url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 270px, 334px, 768px;
+    background-position: 50% 50%, 50% 100%, 50% 100%;
+
+    &--welcome {
+      min-height: 390px;
+      background-image:
+        url("../img/text-sedona-index.svg"),
+        url("../img/bg-intro-triangle-mobile.svg"),
+        url("../img/bg-back-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 270px, 334px, 768px;
+      background-position: 50% 50%, 50% 100%, 50% 100%;
+    }
+  }
+
+
+}
