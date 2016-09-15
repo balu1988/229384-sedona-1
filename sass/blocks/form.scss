@@ -1,56 +1,52 @@
-.form {
-  &__wrapper {
-    width: 280px;
-    margin: 0 auto;
-  }
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
 
-  &__header {
-    padding: 20px 0;
-    text-align: center;
-    @include border;
-  }
+.form__header {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: $border-bot;
+}
 
-   &__title {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    text-align: center;
-  }
+.form__title {
+  @include font-fz-lh(18px, 26px);
+  font-weight: bold;
+  text-align: center;
+}
 
-  &__intro {
-    font-size: 14px;
-    line-height: 24px;
-  }
+.form__intro {
+  @include font-fz-lh(14px, 24px);
+}
 
-  &__block {
-    @include border;
+.form__block {
+  padding: 10px 0;
+  border-bottom: $border-bot;
 
-    &:last-of-type {
-      border-bottom: none;
-    }
-  }
-
-  &__label {
-    font-size: 14px;
-    line-height: 26px;
-    color: $text-color;
-
-    &--bold {
-      font-size: 18px;
-      font-weight: bold;
-      color: $black;
-      text-transform: none;
-    }
-  }
-
-  &__input {
-    @include input-style;
-  }
-
-  &__textarea {
-    @include input-style;
+  &:nth-last-of-type(2) {
+    border-bottom: none;
   }
 }
 
+.form__label {
+  @include font-fz-lh(14px, 26px);
+  color: $text-color;
 
+  &--bold {
+    font-size: 18px;
+    font-weight: bold;
+    color: $black;
+    text-transform: none;
+  }
+}
 
+.form__input {
+  @include input-style;
+}
+
+.form__textarea {
+  @include input-style;
+  resize: none;
+  width: 100%;
+  height: 150px;
+}

@@ -1,13 +1,13 @@
 @mixin clearfix {
+  &::before,
   &::after {
     content: "";
     display: table;
+  }
+
+  &::after {
     clear: both;
   }
-}
-
-@mixin border {
-  border-bottom: 1px solid #e5e5e5;
 }
 
 @mixin input-style {
@@ -37,4 +37,9 @@
   &:-ms-input-placeholder {
     opacity: 1;
   }
+}
+
+@mixin font-fz-lh($fz, $lh) {
+  font-size: $fz;
+  line-height: $lh;
 }

@@ -1,0 +1,10 @@
+.logo {
+  position: relative;
+}
+
+.logo__link {
+  position: absolute;
+  left: 50%;
+  top: -56px;
+  transform: translateX(-50%);
+}

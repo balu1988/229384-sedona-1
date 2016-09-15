@@ -1,14 +1,13 @@
 .hotel-search {
   padding: 10px 20px;
   text-align: center;
+}
 
-  &__title {
-    font-size: 21px;
-    line-height: 26px;
-  }
-  &__text {
-    font-size: 14px;
-    line-height: 24px;
-    color: $text-color;
-  }
+.hotel-search__title {
+  @include font-fz-lh(21px, 26px);
+}
+
+.hotel-search__text {
+  @include font-fz-lh(14px, 24px);
+  color: $text-color;
 }

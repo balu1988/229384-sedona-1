@@ -2,25 +2,22 @@
   padding: 30px 30px;
   text-align: center;
 
-  &__title {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-  }
-
-  &__number {
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  &__text {
-    font-size: 14px;
-    line-height: 21px;
-  }
-
   &--icon {
     padding-left: 70px;
     text-align: left;
+  }
+
+  &--icon-house {
+    padding-bottom: 0;
+  }
+
+  &--icon-gift {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--icon-food {
+    padding-top: 0;
   }
 
   &--blue {
@@ -33,3 +30,17 @@
     background-color: $gray;
   }
 }
+
+.reason__title {
+  @include font-fz-lh(18px, 26px);
+  font-weight: bold;
+}
+
+.reason__number {
+  @include font-fz-lh(14px, 21px);
+}
+
+.reason__text {
+  @include font-fz-lh(14px, 21px);
+}
+

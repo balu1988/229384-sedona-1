@@ -1,12 +1,13 @@
 .button {
+  @include font-fz-lh(21px, 26px);
   display: block;
   padding: 15px 45px;
   margin: 40px auto;
-  font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
   border: none;
   color: $white;
   background-color: $blue;
   text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
 }

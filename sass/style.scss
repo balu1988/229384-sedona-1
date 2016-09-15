@@ -1,8 +1,8 @@
 @import
-  "global/normalize",
-  "global/base",
+  "global/variables",
   "global/mixins",
-  "global/variables";
+  "global/normalize",
+  "global/base";
 
 @import
   "blocks/button",
@@ -13,6 +13,7 @@
   "blocks/media",
   "blocks/page-footer",
   "blocks/page-header",
+  "blocks/logo",
   "blocks/reason",
   "blocks/reason-picture",
   "blocks/reasons",
