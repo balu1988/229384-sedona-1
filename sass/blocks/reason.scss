@@ -32,15 +32,6 @@
 }
 
 .reason__title {
-  @include font-fz-lh(18px, 26px);
+  @include font-scale(18px, 26px);
   font-weight: bold;
 }
-
-.reason__number {
-  @include font-fz-lh(14px, 21px);
-}
-
-.reason__text {
-  @include font-fz-lh(14px, 21px);
-}
-

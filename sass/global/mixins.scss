@@ -39,7 +39,7 @@
   }
 }
 
-@mixin font-fz-lh($fz, $lh) {
-  font-size: $fz;
-  line-height: $lh;
+@mixin font-scale($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
 }

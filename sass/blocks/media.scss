@@ -6,26 +6,26 @@
 .media__header {
   padding: 30px 0;
   text-align: center;
-  border-bottom: $border-bot;
+  border-bottom: $split;
 }
 
 .media__title {
-  @include font-fz-lh(18px, 26px);
+  @include font-scale(18px, 26px);
   font-weight: bold;
 }
 
 .media__intro {
-  @include font-fz-lh(14px, 24px);
+  @include font-scale(14px, 24px);
   color: $text-color;
 }
 
 .media__pictures {
   padding: 22px 0;
-  border-bottom: $border-bot;
+  border-bottom: $split;
 }
 
 .media__block {
-  @include font-fz-lh(14px, 24px);
+  @include font-scale(14px, 24px);
 }
 
 .media__name {

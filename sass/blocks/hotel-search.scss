@@ -4,10 +4,10 @@
 }
 
 .hotel-search__title {
-  @include font-fz-lh(21px, 26px);
+  @include font-scale(21px, 26px);
 }
 
 .hotel-search__text {
-  @include font-fz-lh(14px, 24px);
+  @include font-scale(14px, 24px);
   color: $text-color;
 }

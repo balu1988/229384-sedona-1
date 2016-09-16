@@ -6,22 +6,22 @@
 .form__header {
   padding: 20px 0;
   text-align: center;
-  border-bottom: $border-bot;
+  border-bottom: $split;
 }
 
 .form__title {
-  @include font-fz-lh(18px, 26px);
+  @include font-scale(18px, 26px);
   font-weight: bold;
   text-align: center;
 }
 
 .form__intro {
-  @include font-fz-lh(14px, 24px);
+  @include font-scale(14px, 24px);
 }
 
 .form__block {
   padding: 10px 0;
-  border-bottom: $border-bot;
+  border-bottom: $split;
 
   &:nth-last-of-type(2) {
     border-bottom: none;
@@ -29,7 +29,7 @@
 }
 
 .form__label {
-  @include font-fz-lh(14px, 26px);
+  @include font-scale(14px, 26px);
   color: $text-color;
 
   &--bold {

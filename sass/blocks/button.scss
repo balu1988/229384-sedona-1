@@ -1,5 +1,5 @@
 .button {
-  @include font-fz-lh(21px, 26px);
+  @include font-scale(21px, 26px);
   display: block;
   padding: 15px 45px;
   margin: 40px auto;

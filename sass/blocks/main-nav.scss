@@ -20,6 +20,6 @@
 }
 
 .main-nav__link {
-  @include font-fz-lh(18px, 40px);
+  @include font-scale(18px, 40px);
   color: $white;
 }
