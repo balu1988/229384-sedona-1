@@ -8,3 +8,9 @@
   top: -56px;
   transform: translateX(-50%);
 }
+
+@media #{$tablet-widths} {
+  .logo__link {
+    top: -59px;
+  }
+}

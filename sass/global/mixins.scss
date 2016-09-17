@@ -43,3 +43,17 @@
   font-size: $font-size;
   line-height: $line-height;
 }
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+
+  @media #{$tablet-widths} {
+    width: 640px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 960px;
+  }
+}

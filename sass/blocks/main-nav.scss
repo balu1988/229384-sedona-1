@@ -23,3 +23,30 @@
   @include font-scale(18px, 40px);
   color: $white;
 }
+
+@media #{$tablet-widths} {
+  .main-nav {
+	font-size: 0;
+  }
+
+  .main-nav__item {
+	display: inline-block;
+    vertical-align: top;
+    padding: 15px 0;
+    width: 20%;
+    text-align: center;
+    border: none;
+    background-color: $white;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+  }
+
+  .main-nav__link {
+    @include font-scale(14px, 26px);
+    font-weight: bold;
+    color: $black;
+  }
+
+}
