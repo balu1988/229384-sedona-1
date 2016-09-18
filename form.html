@@ -27,14 +27,14 @@
     <article class="form">
       <header class="form__header">
         <div class="form__wrapper">
-          <h2 class="form__title">Оставьте свой отзыв</h2>
-          <p class="form__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h2 class="form__title  form__title--main">Оставьте свой отзыв</h2>
+          <p class="form__intro form__intro--main">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </header>
       <form action="#" method="post">
         <div class="form__block">
           <div class="form__wrapper">
-            <h2 class="form__title">Представьтесь, пожалуйста:</h2>
+            <h2 class="form__title">Представьтесь<span class="form__display-text">, пожалуйста</span>:</h2>
             <div class="form__field">
               <label class="form__label" for="name">Имя:</label>
               <input class="form__input" id="name" type="text" placeholder="Петр" name="name">
@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div class="form__block">
+        <div class="form__block  form__block--contacts">
           <div class="form__wrapper">
             <h2 class="form__title">Контактная информация:</h2>
             <div class="form__field">
@@ -107,7 +107,10 @@
           </div>
         </div>
         <div class="form__wrapper">
-          <button class="button" type="submit">Отправить отзыв</button>
+          <button class="button  button--form" type="submit">Отправить отзыв</button>
+          <div class="form__required-fields">
+            <p>* – обязательные поля</p>
+          </div>
         </div>
       </form>
     </article>

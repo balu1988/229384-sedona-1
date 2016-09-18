@@ -1,5 +1,5 @@
 .reason {
-  padding: 30px 30px;
+  padding: 20px 30px;
   text-align: center;
 
   &--icon {
@@ -34,4 +34,43 @@
 .reason__title {
   @include font-scale(18px, 26px);
   font-weight: bold;
+}
+
+@media #{$tablet-widths} {
+  .reason {
+    width: 33.333333%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    min-height: 256px;
+
+    &--icon {
+    padding-top: 160px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+    }
+  }
+
+  .reason__title {
+    @include font-scale(21px, 26px);
+    width: 160px;
+    margin: 18px auto;
+  }
+
+  .reason__number {
+    @include font-scale(14px, 21px);
+  }
+
+  .reason__text {
+    @include font-scale(14px, 21px);
+    width: 170px;
+    margin: 14px auto;
+  }
+}
+
+@media #{$desktop-widths} {
+  .reason__text {
+    width: 270px;
+  }
 }

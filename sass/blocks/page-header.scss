@@ -17,7 +17,7 @@
   background-position: 50% 50%, 50% 100%, 50% 100%;
 
   &--welcome {
-    min-height: 390px;
+    min-height: 389px;
     background-image:
       url("../img/text-sedona-index.svg"),
       url("../img/bg-intro-triangle-mobile.svg"),
@@ -32,4 +32,29 @@
   .page-header__head {
     display: none;
   }
+
+  .page-header__background-foto {
+  min-height: 290px;
+  background-image:
+    url("../img/text-sedona.svg"),
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 456px, 780px, 1200px;
+  background-position: 50% 50%, 50% 100%, 50% 100%;
+
+    &--welcome {
+      min-height: 518px;
+      background-image:
+        url("../img/text-sedona-index.svg"),
+        url("../img/bg-intro-triangle-mobile.svg"),
+        url("../img/bg-back-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 456px, 780px, 1200px;
+      background-position: 50% 50%, 50% 100%, 50% 100%;
+    }
+  }
 }
+
+
+

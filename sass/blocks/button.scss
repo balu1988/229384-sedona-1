@@ -2,7 +2,7 @@
   @include font-scale(21px, 26px);
   display: block;
   padding: 15px 45px;
-  margin: 40px auto;
+  margin: 0 auto;
   font-weight: bold;
   border: none;
   color: $white;
@@ -11,3 +11,23 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+@media #{$tablet-widths} {
+  .button {
+    width: 458px;
+
+    &--form {
+      width: 324px;
+      float: left;
+      margin: 0;
+    }
+  }
+}
+
+
+@media #{$desktop-widths} {
+    .button--form {
+      width: 480px;
+    }
+}
+

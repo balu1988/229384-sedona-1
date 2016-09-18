@@ -50,10 +50,10 @@
   background-color: #ffffff;
 
   @media #{$tablet-widths} {
-    width: 640px;
+    width: 768px;
   }
 
   @media #{$desktop-widths} {
-    width: 960px;
+    width: 1200px;
   }
 }
