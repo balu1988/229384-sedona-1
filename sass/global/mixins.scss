@@ -47,7 +47,6 @@
 @mixin container() {
   width: 320px;
   margin: 0 auto;
-  background-color: #ffffff;
 
   @media #{$tablet-widths} {
     width: 768px;

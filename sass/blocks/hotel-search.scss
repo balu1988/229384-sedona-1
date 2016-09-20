@@ -1,8 +1,8 @@
 .hotel-search {
-  @include container();
   padding: 10px 20px;
   text-align: center;
   box-sizing: border-box;
+  background-color: $white;
 }
 
 .hotel-search__title {
