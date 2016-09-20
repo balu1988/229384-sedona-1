@@ -1,0 +1,32 @@
+.reasons {
+  @include container();
+}
+
+.reasons__header {
+  padding: 30px;
+  text-align: center;
+}
+
+.reasons__slogan {
+  @include font-scale(18px, 26px);
+}
+
+.reasons__intro {
+  @include font-scale(14px, 26px);
+  color: $text-color;
+}
+
+@media #{$tablet-widths} {
+  .reasons {
+    font-size: 0;
+  }
+
+  .reasons__header {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .reasons__slogan {
+    @include font-scale(21px, 26px);
+  }
+}

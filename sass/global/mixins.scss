@@ -1,0 +1,59 @@
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin input-style {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  background-color: $input-color;
+  outline: none;
+  border: none;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    opacity: 1;
+  }
+}
+
+@mixin font-scale($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+
+  @media #{$tablet-widths} {
+    width: 768px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1200px;
+  }
+}

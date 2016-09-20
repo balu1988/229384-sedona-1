@@ -3,26 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a class="page-header__logo-link" href="index.html"><img src="#" width="" height="" alt="Sedona logo"></a>
-      </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link">Фото и видео</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">Html Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a></li>
+        </ul>
       </nav>
-      <div class="page-header__background-foto  page-header__background-foto--small">
-        <img src="#" width="" height="" alt="Sedona background small">
+      <div class="page-header__head">
+        <button class="page-header__toggle" type="button">Меню</button>
       </div>
+      <div class="logo">
+        <a class="logo__link" href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona logo"></a>
+      </div>
+      <div class="page-header__background-foto"></div>
     </header>
 
     <article class="media">
@@ -32,13 +31,13 @@
           <p class="media__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </header>
-      <div class="media__pictures">
+      <div class="media__pictures  media__pictures--first">
         <div class="media__wrapper">
           <div class="media__photo">
-            <a href=""><img src="#" width="" height="" alt="Photo1"></a>
+            <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Photo1"></a>
           </div>
           <div class="media__block">
-            <b class="media__title">Неродные просторы</b>
+            <b class="media__name">Неродные просторы</b>
             <p class="media__author">Автор фото: Борис</p>
             <a class="media__likes" href="">1350</a>
           </div>
@@ -47,10 +46,10 @@
       <div class="media__pictures">
         <div class="media__wrapper">
           <div class="media__photo">
-            <a href=""><img src="#" width="" height="" alt="Photo2"></a>
+            <a href=""><img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Photo2"></a>
           </div>
           <div class="media__block">
-            <b class="media__title">Местная растительность</b>
+            <b class="media__name">Местная растительность</b>
             <p class="media__author">Автор фото: Сергей</p>
             <a class="media__likes" href="">143</a>
           </div>
@@ -59,10 +58,10 @@
       <div class="media__pictures">
         <div class="media__wrapper">
           <div class="media__photo">
-            <a href=""><img src="#" width="" height="" alt="Photo3"></a>
+            <a href=""><img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Photo3"></a>
           </div>
           <div class="media__block">
-            <b class="media__title">Дорога на север</b>
+            <b class="media__name">Дорога на север</b>
             <p class="media__author">Автор фото: Петр</p>
             <a class="media__likes" href="">96</a>
           </div>
@@ -71,10 +70,10 @@
       <div class="media__pictures">
         <div class="media__wrapper">
           <div class="media__photo">
-            <a href=""><img src="#" width="" height="" alt="Photo4"></a>
+            <a href=""><img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Photo4"></a>
           </div>
           <div class="media__block">
-            <b class="media__title">Мост дьявола</b>
+            <b class="media__name">Мост дьявола</b>
             <p class="media__author">Автор фото: Антон</p>
             <a class="media__likes" href="">254</a>
           </div>
@@ -86,25 +85,24 @@
           <p class="media__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="media__movie">
-          <video class="media__player" poster="#"></video>
+          <video class="media__player" poster="img/video-mobile@1x.jpg"></video>
+          <div class="media__controls"></div>
         </div>
       </div>
     </article>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <p class="page-footer__contacts">#VISITSEDONA</p>
-        <p class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link  social-link--tw" href="#">Твиттер</a>
-            <a class="social-link  social-link--fb" href="#">Фейсбук</a>
-            <a class="social-link  social-link--yt" href="#">Ютуб</a>
-          </span>
-        </p>
-        <p class="page-footer__copyright">Разработано:
-          <a class="page-footer__copyright-link" href="#">HTML Academy</a>
-        </p>
+      <p class="page-footer__contacts">#VISITSEDONA</p>
+      <div class="page-footer__social">
+        <div class="social-links">
+          <a class="social-link  social-link--tw" href="#">Твиттер</a>
+          <a class="social-link  social-link--fb" href="#">Фейсбук</a>
+          <a class="social-link  social-link--yt" href="#">Ютуб</a>
+        </div>
       </div>
+      <p class="page-footer__copyright">Разработано
+        <a class="page-footer__copyright-link" href="#">HTML Academy</a>
+      </p>
     </footer>
 
   </body>

@@ -1,0 +1,26 @@
+.hotel-search {
+  @include container();
+  padding: 10px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hotel-search__title {
+  @include font-scale(21px, 26px);
+}
+
+.hotel-search__text {
+  @include font-scale(14px, 24px);
+  color: $text-color;
+}
+
+@media #{$tablet-widths} {
+  .hotel-search__title {
+    @include font-scale(30px, 26px);
+  }
+
+  .hotel-search__text {
+    width: 458px;
+    margin: 20px auto;
+  }
+}

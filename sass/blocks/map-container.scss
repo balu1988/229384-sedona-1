@@ -1,0 +1,11 @@
+.map-container {
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+}
+
+.map-container {
+  @include container();
+}
