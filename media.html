@@ -18,7 +18,8 @@
           </ul>
         </nav>
         <div class="page-header__head">
-          <button class="page-header__toggle" type="button">Меню</button>
+          <button class="page-header__toggle" type="button">Открыть</button>
+          <button class="page-header__cancel" type="button">Закрыть</button>
         </div>
         <div class="logo">
           <a class="logo__link" href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona logo"></a>
@@ -28,67 +29,112 @@
 
       <article class="media">
         <header class="media__header">
-          <div class="media__wrapper">
+
             <h2 class="media__title">Фото и видео</h2>
             <p class="media__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-          </div>
+
         </header>
-        <div class="media__pictures  media__pictures--first">
-          <div class="media__wrapper">
-            <div class="media__photo">
-              <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Photo1"></a>
+
+        <div class="media__list">
+          <div class="media__pictures  media__pictures--first">
+            <div class="media__wrapper">
+              <div class="media__photo">
+                <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Photo1"></a>
+              </div>
+              <div class="media__block">
+                <div class="media__info">
+                  <b class="media__name">Неродные просторы</b>
+                  <p class="media__author">Автор фото: Борис</p>
+                </div>
+                <div class="media__likes">
+                  <a class="media__likes-svg" href="">Лайк</a>
+                  <span class="media__likes-count">1350</span>
+                </div>
+              </div>
             </div>
-            <div class="media__block">
-              <b class="media__name">Неродные просторы</b>
-              <p class="media__author">Автор фото: Борис</p>
-              <a class="media__likes" href="">1350</a>
+          </div>
+          <div class="media__pictures">
+            <div class="media__wrapper">
+              <div class="media__photo">
+                <a href=""><img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Photo2"></a>
+              </div>
+              <div class="media__block">
+                <div class="media__info">
+                  <b class="media__name">Местная растительность</b>
+                  <p class="media__author">Автор фото: Сергей</p>
+                </div>
+                <div class="media__likes">
+                  <a class="media__likes-svg" href="">Лайк</a>
+                  <span class="media__likes-count">143</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media__pictures">
+            <div class="media__wrapper">
+              <div class="media__photo">
+                <a href=""><img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Photo3"></a>
+              </div>
+              <div class="media__block">
+                <div class="media__info">
+                  <b class="media__name">Дорога на север</b>
+                  <p class="media__author">Автор фото: Петр</p>
+                </div>
+                <div class="media__likes">
+                  <a class="media__likes-svg" href="">Лайк</a>
+                  <span class="media__likes-count">96</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media__pictures">
+            <div class="media__wrapper">
+              <div class="media__photo">
+                <a href=""><img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Photo4"></a>
+              </div>
+              <div class="media__block">
+                <div class="media__info">
+                  <b class="media__name">Мост дьявола</b>
+                  <p class="media__author">Автор фото: Антон</p>
+                </div>
+                <div class="media__likes">
+                  <a class="media__likes-svg" href="">Лайк</a>
+                  <span class="media__likes-count">254</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="media__pictures">
-          <div class="media__wrapper">
-            <div class="media__photo">
-              <a href=""><img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Photo2"></a>
-            </div>
-            <div class="media__block">
-              <b class="media__name">Местная растительность</b>
-              <p class="media__author">Автор фото: Сергей</p>
-              <a class="media__likes" href="">143</a>
-            </div>
-          </div>
-        </div>
-        <div class="media__pictures">
-          <div class="media__wrapper">
-            <div class="media__photo">
-              <a href=""><img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Photo3"></a>
-            </div>
-            <div class="media__block">
-              <b class="media__name">Дорога на север</b>
-              <p class="media__author">Автор фото: Петр</p>
-              <a class="media__likes" href="">96</a>
-            </div>
-          </div>
-        </div>
-        <div class="media__pictures">
-          <div class="media__wrapper">
-            <div class="media__photo">
-              <a href=""><img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Photo4"></a>
-            </div>
-            <div class="media__block">
-              <b class="media__name">Мост дьявола</b>
-              <p class="media__author">Автор фото: Антон</p>
-              <a class="media__likes" href="">254</a>
-            </div>
-          </div>
-        </div>
+
         <div class="media__video">
-          <div class="media__wrapper">
+          <div class="media__video-header">
             <h2 class="media__title">Все еще сомневаетесь?</h2>
             <p class="media__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="media__movie">
-            <video class="media__player" poster="img/video-mobile@1x.jpg"></video>
-            <div class="media__controls"></div>
+            <video class="media__player"></video>
+          </div>
+          <div class="media__wrapper">
+            <div class="media__controls">
+              <div class="media__controls-range">
+                <input class="media__controls-input" type="range" min="0" max="100" step="5" value="30">
+              </div>
+              <div class="media__controls-button">
+                <button type="button" class="replay-button" id="replay">
+                  Replay
+                </button>
+              </div>
+              <div class="media__controls-button">
+                <button type="button" class="subtitles-button" id="subtitles">
+                  Subtitles
+                </button>
+              </div>
+              <div class="media__controls-button">
+                <button type="button" class="fscreen-button" id="full-screen">
+                  Full-Screen
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -102,9 +148,10 @@
             <a class="social-link  social-link--yt" href="#">Ютуб</a>
           </div>
         </div>
-        <p class="page-footer__copyright">Разработано
+        <div class="page-footer__copyright-block">
+          <p class="page-footer__copyright">Разработано</p>
           <a class="page-footer__copyright-link" href="#">HTML Academy</a>
-        </p>
+        </div>
       </footer>
     </div>
   </body>

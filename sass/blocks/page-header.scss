@@ -4,7 +4,34 @@
 
 .page-header__head {
   min-height: 56px;
+  position: relative;
 }
+
+.page-header__toggle {
+  border: none;
+  background: none;
+  position: absolute;
+  min-height: 23px;
+  min-width:  23px;
+  right: 20px;
+  top:18px;
+  background: url("../img/icon-menu.svg") no-repeat;
+  font-size: 0;
+}
+
+.page-header__cancel {
+  border: none;
+  background: none;
+  position: absolute;
+  min-height: 28px;
+  min-width: 28px;
+  right: 15px;
+  top: -155px;
+  font-size: 0;
+  background: url("../img/icon-cross.svg") no-repeat;
+
+}
+
 
 .page-header__background-foto {
   min-height: 158px;
