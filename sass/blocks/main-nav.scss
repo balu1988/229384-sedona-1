@@ -47,6 +47,37 @@
     @include font-scale(14px, 26px);
     font-weight: bold;
     color: $black;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+       color: rgba(0,0,0,0.3);
+    }
   }
 
+  .main-nav__link--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118,99,87,0.3);
+    }
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .main-nav__item {
+    &:hover {
+      background: #669ec0;
+    }
+
+    &:active a {
+      color: rgba(255,255,255,0.3);
+    }
+  }
 }
