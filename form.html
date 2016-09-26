@@ -18,13 +18,18 @@
           </ul>
         </nav>
         <div class="page-header__head">
-          <button class="page-header__toggle" type="button">Открыть</button>
-          <button class="page-header__cancel" type="button">Закрыть</button>
+          <button class="hamburger hamburger--slider is-active" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
         <div class="logo">
           <a class="logo__link" href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona logo"></a>
         </div>
-        <div class="page-header__background-foto"></div>
+        <div class="page-header__background-foto">
+          <img src="img/text-sedona.svg" width="" height="" alt="text-sedona">
+        </div>
       </header>
 
       <article class="form">
@@ -128,7 +133,9 @@
         <div class="form__popup  form__popup--good  visually-hidden">
           <h2 class="form__popup-message">Ваш отзыв отправлен!</h2>
           <p class="form__popup-details">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="form__popup-close  button">Закрыть окно</button>
+          <div class="form__popup-wrap">
+            <button class="form__popup-close  button">Закрыть окно</button>
+          </div>
         </div>
 
       </article>
@@ -148,5 +155,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

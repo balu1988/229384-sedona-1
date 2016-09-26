@@ -1,16 +1,12 @@
 .logo {
-  position: relative;
-}
-
-.logo__link {
   position: absolute;
   left: 50%;
-  top: -56px;
+  top: 167px;
   transform: translateX(-50%);
 }
 
 @media #{$tablet-widths} {
-  .logo__link {
-    top: -59px;
+  .logo {
+    top: -5px;
   }
 }

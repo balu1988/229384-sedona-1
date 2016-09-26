@@ -71,8 +71,6 @@
 @media #{$tablet-widths} {
   .reason {
     width: 33.333333%;
-    display: inline-block;
-    vertical-align: top;
     box-sizing: border-box;
     min-height: 256px;
 
@@ -136,18 +134,22 @@
       @include font-scale(21px, 26px);
       width: 160px;
       margin: 18px auto;
-    }
-
-    .reason__number {
-      @include font-scale(14px, 21px);
-    }
-
-    .reason__text {
-      @include font-scale(14px, 21px);
-      width: 170px;
-      margin: 14px auto;
-    }
   }
+
+  .reason__number {
+    @include font-scale(14px, 21px);
+  }
+
+  .reason__text {
+    @include font-scale(14px, 21px);
+    width: 170px;
+    margin: 14px auto;
+  }
+
+  .reason-picture--order {
+    order: -1;
+  }
+}
 
 @media #{$desktop-widths} {
   .reason__text {

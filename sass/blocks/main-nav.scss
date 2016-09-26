@@ -25,6 +25,10 @@
 }
 
 @media #{$tablet-widths} {
+  .main-nav__list {
+    background-color: $white;
+  }
+
   .main-nav {
 	font-size: 0;
   }

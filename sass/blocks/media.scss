@@ -60,17 +60,12 @@
 }
 
 .media__likes-svg {
-  font-size: 0;
+  font-weight: bold;
+  color: $black;
   min-height: 20px;
   width: 22px;
   background-repeat: no-repeat;
   background-image: url("../img/icon-like.svg");
-}
-
-.media__likes-count {
-  margin-left: 10px;
-  font-weight: bold;
-  color: $black;
 }
 
 .media__video {

@@ -25,6 +25,7 @@
     position: absolute;
     bottom: -30px;
     left: 0;
+    z-index: 99;
     width: 100%;
     height: 50px;
     background: url("../img/bg-triangle.svg") no-repeat;
@@ -33,8 +34,8 @@
 }
 
 @media #{$tablet-widths} {
-  .reasons {
-    font-size: 0;
+  .reasons__row {
+	display: flex;
   }
 
   .reasons__header {
@@ -44,10 +45,6 @@
 
   .reasons__slogan {
     @include font-scale(21px, 26px);
-  }
-
-  .reasons__features {
-	display: flex;
   }
 }
 
