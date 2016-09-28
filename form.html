@@ -13,28 +13,33 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="media.html">Фото и видео</a></li>
-            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a></li>
           </ul>
         </nav>
         <div class="page-header__head">
-          <button class="page-header__toggle" type="button">Меню</button>
+          <button class="hamburger hamburger--slider is-active" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
         <div class="logo">
           <a class="logo__link" href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona logo"></a>
         </div>
-        <div class="page-header__background-foto"></div>
+        <div class="page-header__background-foto">
+          <img src="img/text-sedona.svg" width="" height="" alt="text-sedona">
+        </div>
       </header>
 
       <article class="form">
         <header class="form__header">
-          <div class="form__wrapper">
-            <h2 class="form__title  form__title--main">Оставьте свой отзыв</h2>
-            <p class="form__intro form__intro--main">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          </div>
+          <h2 class="form__title  form__title--main">Оставьте свой отзыв</h2>
+          <p class="form__intro form__intro--main">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
-        <form action="#" method="post">
-          <div class="form__block">
+
+        <form class="form__area" action="#" method="post">
+          <div class="form__block  form__block--introduce">
             <div class="form__wrapper">
               <h2 class="form__title">Представьтесь<span class="form__display-text">, пожалуйста</span>:</h2>
               <div class="form__field">
@@ -53,68 +58,86 @@
           </div>
           <div class="form__block  form__block--contacts">
             <div class="form__wrapper">
-              <h2 class="form__title">Контактная информация:</h2>
+              <h2 class="form__title  form__title--line">Контактная информация:</h2>
               <div class="form__field">
-                <label class="form__label" for="tel">Контактный телефон:</label>
-                <input class="form__input" id="tel" type="tel" placeholder="Введите телефон" name="phone" pattern="[0-9]{10}">
+                <label class="form__label  form__label--contacts" for="tel"><span class="form__display-contact">Контактный </span>телефон:</label>
+                <input class="form__input  form__input--tel" id="tel" type="tel" placeholder="Введите телефон" name="phone" pattern="[0-9]{10}">
+                <div class="form__input-icon  form__input-icon--phone"></div>
+                <div class="form__error">
+                  <p class="form__error-message">Ошибка, перепроверьте номер</p>
+              </div>
               </div>
               <div class="form__field">
-                <label class="form__label" for="email">Электронная почта:</label>
+                <label class="form__label  form__label--email" for="email">Электронная почта:</label>
                 <input class="form__input" id="email" type="email" placeholder="Введите e-mail" name="email">
+                <div class="form__input-icon  form__input-icon--email"></div>
               </div>
             </div>
           </div>
-          <div class="form__block">
+          <div class="form__block  form__block--impressions">
             <div class="form__wrapper">
               <h2 class="form__title">Ваше общее впечатление:</h2>
               <div class="form__field">
-                <input class="form__input" id="pos" type="radio" name="radiobutton" value="+" checked>
+                <input class="form__input-radio" id="pos" type="radio" name="radiobutton" value="+" checked>
                 <label class="form__label  form__label--bold" for="pos">Скорее положительное</label>
               </div>
               <div class="form__field">
-                <input class="form__input" id="neg" type="radio" name="radiobutton" value="-">
+                <input class="form__input-radio" id="neg" type="radio" name="radiobutton" value="-">
                 <label class="form__label  form__label--bold" for="neg">Скорее отрицательное</label>
               </div>
               <div class="form__field">
-                <input class="form__input" id="dk" type="radio" name="radiobutton" value="?">
+                <input class="form__input-radio" id="dk" type="radio" name="radiobutton" value="?">
                 <label class="form__label  form__label--bold" for="dk">Затрудняюсь ответить</label>
               </div>
             </div>
           </div>
-          <div class="form__block">
+          <div class="form__block  form__block--attraction">
             <div class="form__wrapper">
-              <h2 class="form__title">Посещенные достопримечательности:</h2>
+              <h2 class="form__title  form__title--line">Посещенные <br> достопримечательности:</h2>
               <div class="form__field">
-                <input class="form__input" id="opt1" type="checkbox" name="sight" checked>
+                <input class="form__input-box" id="opt1" type="checkbox" name="sight" checked>
                 <label class="form__label  form__label--bold" for="opt1">Мост Дьявола</label>
               </div>
               <div class="form__field">
-                <input class="form__input" id="opt2" type="checkbox" name="sight" checked>
+                <input class="form__input-box" id="opt2" type="checkbox" name="sight" checked>
                 <label class="form__label  form__label--bold" for="opt2">Слайд-парк</label>
               </div>
               <div class="form__field">
-                <input class="form__input" id="opt3" type="checkbox" name="sight">
+                <input class="form__input-box" id="opt3" type="checkbox" name="sight">
                 <label class="form__label  form__label--bold" for="opt3">Гора-Колокол</label>
               </div>
               <div class="form__field">
-                <input class="form__input" id="opt4" type="checkbox" name="sight" checked>
+                <input class="form__input-box" id="opt4" type="checkbox" name="sight" checked>
                 <label class="form__label  form__label--bold" for="opt4">Красные скалы</label>
               </div>
             </div>
           </div>
-          <div class="form__block">
+          <div class="form__block  form__block--recall">
             <div class="form__wrapper">
-              <h2 class="form__title">Опишите свои эмоции:</h2>
+              <h2 class="form__title  form__title--line">Опишите свои эмоции:</h2>
               <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
-          </div>
-          <div class="form__wrapper">
-            <button class="button  button--form" type="submit">Отправить отзыв</button>
-            <div class="form__required-fields">
-              <p>* – обязательные поля</p>
+              <button class="button  button--form" type="submit">Отправить отзыв</button>
+              <div class="form__required-fields">
+                <p>* – обязательные поля</p>
+              </div>
             </div>
           </div>
         </form>
+
+        <div class="form__popup  form__popup--bad  visually-hidden">
+          <h2 class="form__popup-message">Что-то пошло не так!</h2>
+          <p class="form__popup-details">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="form__popup-ok  button">ОК</button>
+        </div>
+
+        <div class="form__popup  form__popup--good  visually-hidden">
+          <h2 class="form__popup-message">Ваш отзыв отправлен!</h2>
+          <p class="form__popup-details">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="form__popup-wrap">
+            <button class="form__popup-close  button">Закрыть окно</button>
+          </div>
+        </div>
+
       </article>
 
       <footer class="page-footer">
@@ -126,10 +149,12 @@
             <a class="social-link  social-link--yt" href="#">Ютуб</a>
           </div>
         </div>
-        <p class="page-footer__copyright">Разработано
+        <div class="page-footer__copyright-block">
+          <p class="page-footer__copyright">Разработано</p>
           <a class="page-footer__copyright-link" href="#">HTML Academy</a>
-        </p>
+        </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 .reason {
   padding: 20px 30px;
   text-align: center;
+  position: relative;
 
   &--icon {
     padding-left: 70px;
@@ -31,6 +32,37 @@
   }
 }
 
+.reason--icon-house::before {
+  content: " ";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  min-height: 40px;
+  min-width: 42px;
+  background: url("../img/icon-house.svg") no-repeat;
+  background-size: 42px 40px;
+}
+.reason--icon-gift::before {
+  content: " ";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  min-height: 40px;
+  min-width: 42px;
+  background: url("../img/icon-gift.svg") no-repeat;
+  background-size: 42px 40px;
+}
+.reason--icon-food::before {
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  min-height: 40px;
+  min-width: 42px;
+  background: url("../img/icon-burger.svg") no-repeat;
+  background-size: 42px 40px;
+}
+
 .reason__title {
   @include font-scale(18px, 26px);
   font-weight: bold;
@@ -39,23 +71,69 @@
 @media #{$tablet-widths} {
   .reason {
     width: 33.333333%;
-    display: inline-block;
-    vertical-align: top;
     box-sizing: border-box;
     min-height: 256px;
 
     &--icon {
-    padding-top: 160px;
-    padding-left: 30px;
-    padding-bottom: 60px;
-    text-align: center;
+      padding-top: 110px;
+      padding-left: 30px;
+      padding-bottom: 60px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .reason--icon-house {
+    &::before {
+      content: " ";
+      min-height: 78px;
+      min-width: 80px;
+      background: url("../img/icon-house.svg") no-repeat;
+      background-position: center;
+      padding-bottom: 30px;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .reason--icon-food {
+    order: 1;
+
+    &::before {
+      content: " ";
+      min-height: 78px;
+      min-width: 80px;
+      background: url("../img/icon-burger.svg") no-repeat;
+      background-position: center;
+      padding-bottom: 30px;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .reason--icon-gift {
+    order: 2;
+
+    &::before {
+      content: " ";
+      min-height: 78px;
+      min-width: 80px;
+      background: url("../img/icon-gift.svg") no-repeat;
+      background-position: center;
+      padding-bottom: 30px;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   .reason__title {
-    @include font-scale(21px, 26px);
-    width: 160px;
-    margin: 18px auto;
+      @include font-scale(21px, 26px);
+      width: 160px;
+      margin: 18px auto;
   }
 
   .reason__number {
@@ -66,6 +144,10 @@
     @include font-scale(14px, 21px);
     width: 170px;
     margin: 14px auto;
+  }
+
+  .reason-picture--order {
+    order: -1;
   }
 }
 

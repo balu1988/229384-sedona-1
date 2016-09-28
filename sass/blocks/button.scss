@@ -2,7 +2,7 @@
   @include font-scale(21px, 26px);
   display: block;
   padding: 15px 45px;
-  margin: 0 auto;
+  margin: 50px auto;
   font-weight: bold;
   border: none;
   color: $white;
@@ -10,6 +10,19 @@
   text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    outline: none;
+    color: rgba(255,255,255,0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
 }
 
 @media #{$tablet-widths} {
@@ -18,8 +31,6 @@
 
     &--form {
       width: 324px;
-      float: left;
-      margin: 0;
     }
   }
 }
