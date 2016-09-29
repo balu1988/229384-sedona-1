@@ -3,15 +3,35 @@
   left: 50%;
   top: 166px;
   transform: translateX(-50%);
+
+  svg {
+      width: 188px;
+      height: 96px;
+    }
 }
+
+.tablet-svg {
+  opacity: 0;
+}
+
+.desktop-svg {
+  opacity: 0;
+}
+
 
 @media #{$tablet-widths} {
   .logo {
-    top: -5px;
+    top: 0;
+  }
 
-    img {
-      width: 187px;
-      height: 97px;
-    }
+  .tablet-svg {
+    opacity: 1;
   }
 }
+
+@media #{$desktop-widths} {
+  .desktop-svg {
+    opacity: 1;
+  }
+}
+
