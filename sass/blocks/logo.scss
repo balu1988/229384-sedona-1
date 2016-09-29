@@ -1,12 +1,17 @@
 .logo {
   position: absolute;
   left: 50%;
-  top: 167px;
+  top: 166px;
   transform: translateX(-50%);
 }
 
 @media #{$tablet-widths} {
   .logo {
     top: -5px;
+
+    img {
+      width: 187px;
+      height: 97px;
+    }
   }
 }

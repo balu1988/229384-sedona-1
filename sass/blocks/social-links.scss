@@ -1,3 +1,8 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
 @media #{$tablet-widths} {
   .social-links {
     @include font-scale(14px, 21px);

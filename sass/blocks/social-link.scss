@@ -1,27 +1,45 @@
 .social-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 47px;
   min-height: 48px;
   background-color: $blue;
   font-size: 0;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    svg {
+      fill: rgba(255,255,255,0.3);
+    }
+  }
 }
 
 .social-link--tw {
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   margin-right: 6px;
+
+  svg {
+    margin: auto;
+    fill: $white;
+  }
 }
 
 .social-link--fb {
-  background-image: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   margin-right: 6px;
+
+  svg {
+    margin: auto;
+    fill: $white;
+  }
 }
 
 .social-link--yt {
-  background-image: url("../img/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  svg {
+    margin: auto;
+    fill: $white;
+  }
 }
