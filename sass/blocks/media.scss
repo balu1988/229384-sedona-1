@@ -59,13 +59,15 @@
   padding-right: 20px;
 }
 
-.media__likes-svg {
+.media__likes-link {
   font-weight: bold;
   color: $black;
-  min-height: 20px;
-  width: 22px;
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-like.svg");
+  display: flex;
+
+  svg {
+    margin-right: 10px;
+    fill: rgba(0,0,0,0.3);
+  }
 }
 
 .media__video {
@@ -88,6 +90,10 @@
   height: 201px;
   display: block;
   background: url("../img/video-mobile@1x.jpg") no-repeat;
+
+  @media #{$retina} {
+    background: url("../img/video-mobile@2x.jpg") no-repeat;
+  }
 }
 
 .media__controls {
@@ -179,25 +185,6 @@
   }
 }
 
-.media__controls-button {
-  width: 50px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--replay {
-    background-image: url("../img/icon-video-replay.svg");
-  }
-
-  &--subtitles {
-    background-image: url("../img/icon-video-subtitles.svg");
-  }
-
-  &--fullscreen {
-    background-image: url("../img/icon-video-fullscreen.svg");
-  }
-}
-
 .media__controls-block {
   display: flex;
   align-items: center;
@@ -207,6 +194,21 @@
 
   &--left {
     flex-grow: 1;
+  }
+}
+
+.replay-button,
+.subtitles-button,
+.fscreen-button {
+  margin-left: 15px;
+  margin-right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    vertical-align: middle;
+    fill: #5c6870;
   }
 }
 
@@ -273,6 +275,12 @@
 
   .media__player {
     width: 100%;
+    height: 100%;
+    background: url("../img/video-tablet@1x.jpg") no-repeat;
+
+    @media #{$retina} {
+      background: url("../img/video-tablet@2x.jpg") no-repeat;
+    }
   }
 
   .media__movie {
@@ -302,6 +310,15 @@
 
     &--left {
       flex-grow: 0;
+    }
+  }
+
+  .replay-button,
+  .subtitles-button,
+  .fscreen-button {
+
+    svg {
+      fill: $white;
     }
   }
 }
@@ -335,12 +352,24 @@
     color: $white;
   }
 
-  .media__likes-count {
+  .media__likes-link {
 	color: $white;
+
+    svg {
+      fill: $white;
+    }
   }
 
   .media__video {
     width: 800px;
+  }
+
+  .media__player {
+    background: url("../img/video-desktop@1x.jpg") no-repeat;
+
+    @media #{$retina} {
+      background: url("../img/video-desktop@2x.jpg") no-repeat;
+    }
   }
 }
 

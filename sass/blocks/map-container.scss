@@ -1,11 +1,24 @@
 .map-container {
   overflow: hidden;
+  background-color: $white;
+  min-height: 350px;
+  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   img {
     display: block;
   }
 }
 
-.map-container {
-  background-color: $white;
+@media #{$tablet-widths} {
+  .map-container {
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+  }
+}
+
+@media #{$desktop-widths} {
+  .map-container {
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
+  }
 }

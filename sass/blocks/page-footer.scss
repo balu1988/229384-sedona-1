@@ -10,22 +10,29 @@
   font-weight: bold;
 }
 
-.page-footer__copyright {
-  @include font-scale(14px, 26px);
-}
-
 .page-footer__copyright-block >* {
   display: inline-block;
   vertical-align: middle;
 }
 
+.page-footer__copyright {
+  @include font-scale(14px, 26px);
+}
+
 .page-footer__copyright-link {
-  min-height: 49px;
-  width: 46px;
   font-size: 0;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  &:hover svg {
+    fill: $blue;
+  }
+
+  &:active svg {
+    fill: rgba(0,0,0,0.3);
+  }
 }
 
 @media #{$tablet-widths} {

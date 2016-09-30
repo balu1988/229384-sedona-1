@@ -14,10 +14,12 @@
   border: 0;
   margin: 0;
   overflow: visible;
+  position: absolute;
+  right: 0;
 }
 
-.hamburger:hover {
-  opacity: 0.7;
+.hamburger:focus {
+  outline: none;
 }
 
 .hamburger-box {
@@ -36,7 +38,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #000;
+  background-color: $blue;
   border-radius: 4px;
   position: absolute;
   transition-property: -webkit-transform;
@@ -60,7 +62,7 @@
 }
 
 .hamburger--slider .hamburger-inner {
-top: 2px;
+  top: 2px;
 }
 
 .hamburger--slider .hamburger-inner::before {
