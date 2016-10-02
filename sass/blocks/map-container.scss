@@ -11,6 +11,11 @@
   }
 }
 
+.map-container__js-map {
+  width: 100%;
+  height: 350px;
+}
+
 @media #{$tablet-widths} {
   .map-container {
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");

@@ -23,8 +23,8 @@
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 23px;
+  height: 22px;
   display: inline-block;
   position: relative;
 }
@@ -36,7 +36,7 @@
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
+  width: 23px;
   height: 4px;
   background-color: $blue;
   border-radius: 4px;
@@ -81,6 +81,8 @@
 .hamburger--slider.is-active .hamburger-inner {
 -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
         transform: translate3d(0, 10px, 0) rotate(45deg);
+  background-color: red;
+  width: 30px;
 }
 
 .hamburger--slider.is-active .hamburger-inner::before {
@@ -92,4 +94,6 @@
 .hamburger--slider.is-active .hamburger-inner::after {
   -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
           transform: translate3d(0, -20px, 0) rotate(-90deg);
+  background-color: red;
+  width: 30px;
 }
