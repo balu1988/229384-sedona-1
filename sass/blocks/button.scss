@@ -25,6 +25,21 @@
   }
 }
 
+@keyframes blink {
+  from {
+    background-color: #5496bd;
+  }
+  to {
+    background-color: #3e84ae;
+  }
+}
+
+.in-progress {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
 @media #{$tablet-widths} {
   .button {
     width: 458px;

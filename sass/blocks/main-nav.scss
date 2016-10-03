@@ -75,6 +75,14 @@
 }
 
 @media #{$mobile-widths-only} {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .no-js .main-nav {
+    display: block;
+  }
+
   .main-nav__item {
     &:hover {
       background: #669ec0;

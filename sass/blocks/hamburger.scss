@@ -23,8 +23,8 @@
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 23px;
+  height: 22px;
   display: inline-block;
   position: relative;
 }
@@ -36,10 +36,10 @@
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
+  width: 23px;
   height: 4px;
   background-color: $blue;
-  border-radius: 4px;
+
   position: absolute;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -78,9 +78,15 @@
   top: 20px;
 }
 
+.hamburger--slider.is-active {
+  top: -173px;
+}
+
 .hamburger--slider.is-active .hamburger-inner {
--webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
-        transform: translate3d(0, 10px, 0) rotate(45deg);
+-webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+        transform: translate3d(0, 9px, 0) rotate(45deg);
+  background-color: $white;
+  width: 25px;
 }
 
 .hamburger--slider.is-active .hamburger-inner::before {
@@ -92,28 +98,6 @@
 .hamburger--slider.is-active .hamburger-inner::after {
   -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
           transform: translate3d(0, -20px, 0) rotate(-90deg);
+  background-color: $white;
+  width: 25px;
 }
-
-//.page-header__toggle {
-//  border: none;
-//  background: none;
-//  position: absolute;
-//  min-height: 23px;
-//  min-width:  23px;
-//  right: 20px;
-//  top:18px;
-//  background: url("../img/icon-menu.svg") no-repeat;
-//  font-size: 0;
-//}
-//
-//.page-header__cancel {
-//  border: none;
-//  background: none;
-//  position: absolute;
-//  min-height: 28px;
-//  min-width: 28px;
-//  right: 15px;
-//  top: -155px;
-//  font-size: 0;
-//  background: url("../img/icon-cross.svg") no-repeat;
-//}

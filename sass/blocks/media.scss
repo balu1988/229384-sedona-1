@@ -205,10 +205,23 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  fill: #5c6870;
 
   svg {
     vertical-align: middle;
-    fill: #5c6870;
+
+  }
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    fill: #c1c1c1;
   }
 }
 
@@ -316,9 +329,14 @@
   .replay-button,
   .subtitles-button,
   .fscreen-button {
+    fill: $white;
 
-    svg {
-      fill: $white;
+    &:hover {
+      fill: $gray;
+    }
+
+    &:active {
+      fill: #c1c1c1;
     }
   }
 }
