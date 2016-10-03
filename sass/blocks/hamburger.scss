@@ -39,7 +39,7 @@
   width: 23px;
   height: 4px;
   background-color: $blue;
-  border-radius: 4px;
+
   position: absolute;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -78,11 +78,15 @@
   top: 20px;
 }
 
+.hamburger--slider.is-active {
+  top: -173px;
+}
+
 .hamburger--slider.is-active .hamburger-inner {
--webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
-        transform: translate3d(0, 10px, 0) rotate(45deg);
-  background-color: red;
-  width: 30px;
+-webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+        transform: translate3d(0, 9px, 0) rotate(45deg);
+  background-color: $white;
+  width: 25px;
 }
 
 .hamburger--slider.is-active .hamburger-inner::before {
@@ -94,6 +98,6 @@
 .hamburger--slider.is-active .hamburger-inner::after {
   -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
           transform: translate3d(0, -20px, 0) rotate(-90deg);
-  background-color: red;
-  width: 30px;
+  background-color: $white;
+  width: 25px;
 }

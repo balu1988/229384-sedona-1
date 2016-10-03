@@ -1,7 +1,7 @@
 .logo {
   position: absolute;
   left: 50%;
-  top: 166px;
+  top: -56px;
   transform: translateX(-50%);
 
   svg {
@@ -21,7 +21,7 @@
 
 @media #{$tablet-widths} {
   .logo {
-    top: 0;
+    top: -59px;
   }
 
   .tablet-svg {
