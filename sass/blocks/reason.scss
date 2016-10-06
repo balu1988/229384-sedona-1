@@ -1,5 +1,5 @@
 .reason {
-  padding: 20px 30px;
+  padding: 20px 28px;
   text-align: center;
   position: relative;
 
@@ -9,26 +9,30 @@
   }
 
   &--icon-house {
+    padding-top: 15px;
     padding-bottom: 0;
   }
 
   &--icon-gift {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   &--icon-food {
     padding-top: 0;
+    padding-bottom: 18px;
   }
 
   &--blue {
     color: $white;
     background-color: $blue;
+    padding-bottom: 25px;
   }
 
   &--grey {
     color: $text-color;
     background-color: $gray;
+    padding: 13px 35px;
   }
 }
 
@@ -47,18 +51,40 @@
 }
 
 .reason--icon-gift svg {
-  top: -15px;
+  top: 0px;
   left: 20px;
 }
 
 .reason--icon-food svg {
   top: -10px;
   left: 20px;
+  width: 39px;
 }
 
 .reason__title {
   @include font-scale(18px, 26px);
   font-weight: bold;
+
+  &--first {
+    margin-top: 35px;
+  }
+
+  &--grey {
+    margin-bottom: 9px;
+  }
+}
+
+.reason--border {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    z-index: 1;
+    display: block;
+    width: 280px;
+    border-bottom: 1px solid #d6d6d6;
+  }
 }
 
 @media #{$tablet-widths} {
@@ -82,13 +108,24 @@
   .reason--icon-gift svg {
     height: 78px;
     width: 80px;
-    top: 50px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
   }
 
+  .reason--icon {
+    .reason__text {
+      width: 165px;
+      margin-top: 4px;
+    }
+  }
+
   .reason--icon-food {
     order: 1;
+
+    .reason__text {
+      width: 155px;
+    }
   }
 
   .reason--icon-gift {
@@ -97,8 +134,22 @@
 
   .reason__title {
     @include font-scale(21px, 26px);
-    width: 160px;
+    width: 151px;
     margin: 18px auto;
+
+    &--first {
+      margin-top: 25px;
+    }
+
+    &--grey {
+      margin-top: 29px;
+      margin-bottom: 9px;
+    }
+
+    &--blue {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
   }
 
   .reason__number {
@@ -111,13 +162,29 @@
     margin: 14px auto;
   }
 
+
+
   .reason-picture--order {
     order: -1;
+  }
+
+  .reason--grey {
+    .reason__text {
+      margin-top: 22px;
+    }
   }
 }
 
 @media #{$desktop-widths} {
   .reason__text {
     width: 270px;
+  }
+
+  .reason--icon {
+    padding-bottom: 68px;
+    
+    .reason__text {
+      width: 270px;
+    }
   }
 }

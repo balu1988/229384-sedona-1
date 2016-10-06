@@ -30,7 +30,7 @@
               <svg><use xlink:href="#logo-sedona-desktop"></use></svg>
             </a>
           </div>
-          <svg><use xlink:href="#text-sedona-index"></use></svg>
+          <svg class="page-header__text"><use xlink:href="#text-sedona-index"></use></svg>
         </div>
       </header>
 
@@ -69,7 +69,7 @@
                   <p class="form__error-message">Ошибка, перепроверьте номер</p>
               </div>
               </div>
-              <div class="form__field">
+              <div class="form__field  form__field--email">
                 <label class="form__label  form__label--email" for="email">Электронная почта:</label>
                 <input class="form__input" id="email" type="email" placeholder="Введите e-mail" name="email">
                 <div class="form__input-icon  form__input-icon--email"></div>
@@ -79,15 +79,15 @@
           <div class="form__block  form__block--impressions">
             <div class="form__wrapper">
               <h2 class="form__title">Ваше общее впечатление:</h2>
-              <div class="form__field">
+              <div class="form__field  form__field--impressions">
                 <input class="form__input-radio" id="pos" type="radio" name="radiobutton" value="+" checked>
                 <label class="form__label  form__label--bold" for="pos">Скорее положительное</label>
               </div>
-              <div class="form__field">
+              <div class="form__field  form__field--impressions">
                 <input class="form__input-radio" id="neg" type="radio" name="radiobutton" value="-">
                 <label class="form__label  form__label--bold" for="neg">Скорее отрицательное</label>
               </div>
-              <div class="form__field">
+              <div class="form__field  form__field--impressions">
                 <input class="form__input-radio" id="dk" type="radio" name="radiobutton" value="?">
                 <label class="form__label  form__label--bold" for="dk">Затрудняюсь ответить</label>
               </div>
@@ -100,15 +100,15 @@
                 <input class="form__input-box" id="opt1" type="checkbox" name="sight" checked>
                 <label class="form__label  form__label--bold" for="opt1">Мост Дьявола</label>
               </div>
-              <div class="form__field">
+              <div class="form__field  form__field--park">
                 <input class="form__input-box" id="opt2" type="checkbox" name="sight" checked>
                 <label class="form__label  form__label--bold" for="opt2">Слайд-парк</label>
               </div>
-              <div class="form__field">
+              <div class="form__field  form__field--bell">
                 <input class="form__input-box" id="opt3" type="checkbox" name="sight">
                 <label class="form__label  form__label--bold" for="opt3">Гора-Колокол</label>
               </div>
-              <div class="form__field">
+              <div class="form__field  form__field--rock">
                 <input class="form__input-box" id="opt4" type="checkbox" name="sight" checked>
                 <label class="form__label  form__label--bold" for="opt4">Красные скалы</label>
               </div>
