@@ -4,6 +4,7 @@
 
 .reasons__header {
   padding: 30px;
+  padding-bottom: 25px;
   text-align: center;
   position: relative;
 }
@@ -15,6 +16,8 @@
 .reasons__intro {
   @include font-scale(14px, 26px);
   color: $text-color;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 @media #{$mobile-widths-only} {
@@ -39,7 +42,10 @@
   }
 
   .reasons__header {
-    padding: 50px 140px;
+    padding-top: 35px;
+    padding-bottom: 53px;
+    padding-left: 140px;
+    padding-right: 140px;
     margin: 0 auto;
   }
 
@@ -50,6 +56,7 @@
 
 @media #{$desktop-widths} {
   .reasons__header {
-    padding: 50px 350px;
+    padding: 36px 350px;
+    padding-bottom: 52px;
   }
 }
