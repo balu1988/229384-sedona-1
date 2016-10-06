@@ -28,16 +28,16 @@ module.exports = function(grunt) {
     },
 
     imagemin: {
-          images: {
-            options: {
-              optimizationLevel: 3
-            },
-            files: [{
-              expand: true,
-              src: ["build/img/**/*.{png,jpg,gif}"]
-            }]
-          }
+      images: {
+        options: {
+          optimizationLevel: 3
         },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
 
     sass: {
       style: {
@@ -56,7 +56,9 @@ module.exports = function(grunt) {
               "last 2 Chrome versions",
               "last 2 Firefox versions",
               "last 2 Opera versions",
-              "last 2 Edge versions"
+              "last 2 Edge versions",
+              "IE 11",
+              "IE 10"
             ]}),
             require("css-mqpacker")({
               sort: true

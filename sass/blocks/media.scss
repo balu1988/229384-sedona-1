@@ -98,6 +98,7 @@
   height: 201px;
   display: block;
   background: url("../img/video-mobile@1x.jpg") no-repeat;
+  background-size: cover;
 
   @media #{$retina} {
     background: url("../img/video-mobile@2x.jpg") no-repeat;
@@ -348,10 +349,11 @@
 
   .media__controls-block {
     background-color: transparent;
-    padding-right: 10px;
+
 
     &--left {
       flex-grow: 0;
+      padding-right: 10px;
     }
   }
 

@@ -102,3 +102,7 @@
   background-color: $white;
   width: 27px;
 }
+
+.no-js .hamburger--hide {
+  display: none;
+}
