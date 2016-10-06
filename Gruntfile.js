@@ -1,16 +1,48 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-sass");
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
+
+    svgstore: {
+      options: {
+        svg: {
+          style: "display: none"
+        }
+      },
+      symbols: {
+        files: {
+          "build/img/symbols.svg": ["img/icons/*.svg"]
+        }
+      }
+    },
+
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["build/img/icons/*.svg"]
+        }]
+      }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
+
     sass: {
       style: {
         files: {
-          "css/style.css": "sass/style.scss"
+          "build/css/style.css": "sass/style.scss"
         }
       }
     },
@@ -24,40 +56,55 @@ module.exports = function(grunt) {
               "last 2 Chrome versions",
               "last 2 Firefox versions",
               "last 2 Opera versions",
-              "last 2 Edge versions"
-            ]})
+              "last 2 Edge versions",
+              "IE 11",
+              "IE 10"
+            ]}),
+            require("css-mqpacker")({
+              sort: true
+            })
           ]
         },
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
     browserSync: {
       server: {
         bsFiles: {
-          src: [
-            "*.html",
-            "css/*.css"
-          ]
+          src: ["build/*.html", "build/css/*.css"]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
-          notify: false,
-          open: true,
-          ui: false
         }
       }
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
       style: {
         files: ["sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss"],
+        tasks: ["sass", "postcss", "csso"]
+      }
+    },
+
+    csso: {
+      style: {
         options: {
-          spawn: false
+          report: "gzip"
+        },
+        files: {
+          "build/css/style.min.css": ["build/css/style.css"]
         }
       }
+    },
+
+    clean: {
+      build: ["build"]
     },
 
     copy: {
@@ -73,9 +120,26 @@ module.exports = function(grunt) {
           ],
           dest: "build"
         }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
       }
-    },
+    }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "sass",
+    "postcss",
+    "csso",
+    "symbols",
+    "imagemin"
+  ]);
 };

@@ -63,6 +63,7 @@
 
 .hamburger--slider .hamburger-inner {
   top: 2px;
+  right: 5px;
 }
 
 .hamburger--slider .hamburger-inner::before {
@@ -79,14 +80,14 @@
 }
 
 .hamburger--slider.is-active {
-  top: -173px;
+  top: -222px;
 }
 
 .hamburger--slider.is-active .hamburger-inner {
 -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
         transform: translate3d(0, 9px, 0) rotate(45deg);
   background-color: $white;
-  width: 25px;
+  width: 27px;
 }
 
 .hamburger--slider.is-active .hamburger-inner::before {
@@ -99,5 +100,9 @@
   -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
           transform: translate3d(0, -20px, 0) rotate(-90deg);
   background-color: $white;
-  width: 25px;
+  width: 27px;
+}
+
+.no-js .hamburger--hide {
+  display: none;
 }

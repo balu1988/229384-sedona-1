@@ -1,7 +1,7 @@
 .media {
   background-color: $white;
   font-size: 0;
-  padding-bottom: 70px;
+  padding-bottom: 105px;
 }
 
 .media__wrapper {
@@ -14,6 +14,7 @@
   padding: 20px 25px;
   text-align: center;
   border-bottom: $split;
+  padding-bottom: 15px;
 }
 
 .media__title {
@@ -24,10 +25,16 @@
 .media__intro {
   @include font-scale(14px, 24px);
   color: $text-color;
+  margin-top: 27px;
+}
+
+.media__info {
+  margin-top: 16px;
 }
 
 .media__pictures {
   padding: 22px 0;
+  padding-bottom: 18px;
   border-bottom: $split;
 }
 
@@ -57,6 +64,7 @@
 .media__likes {
   display: flex;
   padding-right: 20px;
+  margin-top: 5px;
 }
 
 .media__likes-link {
@@ -65,7 +73,7 @@
   display: flex;
 
   svg {
-    margin-right: 10px;
+    margin-right: 13px;
     fill: rgba(0,0,0,0.3);
   }
 }
@@ -75,7 +83,7 @@
 }
 
 .media__movie {
-  padding-top: 20px;
+  padding-top: 1px;
   margin: 0 auto;
 }
 
@@ -90,6 +98,7 @@
   height: 201px;
   display: block;
   background: url("../img/video-mobile@1x.jpg") no-repeat;
+  background-size: cover;
 
   @media #{$retina} {
     background: url("../img/video-mobile@2x.jpg") no-repeat;
@@ -227,7 +236,7 @@
 
 @media #{$tablet-widths} {
   .media {
-    padding-bottom: 10px;
+    padding-bottom: 41px;
   }
 
   .media__list {
@@ -242,6 +251,7 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    padding-bottom: 16px;
     background-color: $input-color;
 
     &--grey {
@@ -251,6 +261,8 @@
 
   .media__info {
     flex-grow: 1;
+    margin-top: 6px;
+    margin-left: 10px;
   }
 
   .media__title {
@@ -260,6 +272,7 @@
   .media__intro {
     width: 440px;
     margin: 0 auto;
+    padding-top: 5px;
   }
 
   .media__wrapper {
@@ -268,6 +281,8 @@
 
   .media__header {
     border-bottom: none;
+    padding-top: 49px;
+    padding-bottom: 69px;
   }
 
   .media__pictures {
@@ -281,9 +296,20 @@
     }
   }
 
+  .media__pictures--first {
+    .media__likes {
+      padding-right: 8px;
+    }
+  }
+
   .media__video {
     width: 648px;
     margin: 0 auto;
+  }
+
+  .media__video-header {
+    padding-top: 42px;
+    padding-bottom: 72px;
   }
 
   .media__player {
@@ -305,11 +331,14 @@
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     justify-content: space-between;
-    top: -67px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    top: -93px;
   }
 
   .media__controls-block--left {
     order: -1;
+    padding-left: 12px;
   }
 
   .media__controls-range {
@@ -321,9 +350,16 @@
   .media__controls-block {
     background-color: transparent;
 
+
     &--left {
       flex-grow: 0;
+      padding-right: 10px;
     }
+  }
+
+  .fscreen-button {
+    padding-left: 0;
+    padding-right: 16px;
   }
 
   .replay-button,
@@ -343,7 +379,7 @@
 
 @media #{$desktop-widths} {
   .media {
-    padding-bottom: 60px;
+    padding-bottom: 82px;
   }
 
   .media__pictures {
@@ -389,5 +425,12 @@
       background: url("../img/video-desktop@2x.jpg") no-repeat;
     }
   }
-}
 
+  .media__header {
+    padding-top: 89px;
+  }
+
+  .media__video-header {
+    padding-top: 45px;
+  }
+}

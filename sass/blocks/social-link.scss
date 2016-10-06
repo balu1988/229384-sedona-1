@@ -5,6 +5,15 @@
   min-height: 48px;
   background-color: $blue;
   font-size: 0;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    fill: $white;
+  }
 
   &:hover {
     background-color: #669ec0;
@@ -21,25 +30,12 @@
 
 .social-link--tw {
   margin-right: 6px;
-
-  svg {
-    margin: auto;
-    fill: $white;
-  }
 }
 
 .social-link--fb {
   margin-right: 6px;
 
   svg {
-    margin: auto;
-    fill: $white;
-  }
-}
-
-.social-link--yt {
-  svg {
-    margin: auto;
-    fill: $white;
+    top: 15px;
   }
 }

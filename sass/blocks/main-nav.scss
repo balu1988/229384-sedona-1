@@ -9,6 +9,7 @@
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
   text-align: center;
+  padding: 7px;
 
   &:first-child {
     border-top: none;
@@ -30,13 +31,13 @@
   }
 
   .main-nav {
-	font-size: 0;
+	  font-size: 0;
   }
 
   .main-nav__item {
-	display: inline-block;
+	  display: inline-block;
     vertical-align: top;
-    padding: 15px 0;
+    padding: 14px 0;
     width: 20%;
     text-align: center;
     border: none;
