@@ -13,7 +13,7 @@ hamburger.addEventListener("click", function (event) {
 
 function initMap() {
   var myLatLng = {lat: 34.8741, lng: -111.76322};
-  var image = "../img/icon-map-marker.svg"
+  var image = "../img/icon-map-marker.svg";
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.querySelector(".map-container__js-map"), {
     center: myLatLng,
