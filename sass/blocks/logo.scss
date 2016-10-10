@@ -3,11 +3,16 @@
   left: 50%;
   top: -56px;
   transform: translateX(-50%);
+  z-index: 2;
+
+  .logo__link {
+    display: block;
+  }
 
   svg {
-      width: 188px;
-      height: 96px;
-    }
+    width: 188px;
+    height: 96px;
+  }
 }
 
 .tablet-svg {

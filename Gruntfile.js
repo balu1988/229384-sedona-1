@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         },
         options: {
           server: "build",
-          watchTask: true,
+          watchTask: true
         }
       }
     },
